@@ -1,0 +1,40 @@
+{
+  "name": "ExampleProject",
+  "tree": {
+    "$className": "DataModel",
+
+    "ReplicatedStorage": {
+      "Shared": {
+        "$path": "src/ReplicatedStorage"
+      },
+      "Packages": {
+        "$path": "Packages"
+      }
+    },
+
+    "ServerStorage": {
+      "Server": {
+        "$path": "src/ServerStorage"
+      }
+    },
+
+    "ServerScriptService": {
+      "Server": {
+        "$path": "src/ServerScriptService"
+      }
+    },
+
+    "StarterPlayer": {
+      "StarterPlayerScripts": {
+        "Client": {
+          "$path": "src/StarterPlayerScripts"
+        }
+      },
+      "StarterCharacterScripts": {
+        "Client": {
+          "$path": "src/StarterCharacterScripts"
+        }
+      }
+    }
+  }
+}
