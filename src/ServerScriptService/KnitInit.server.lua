@@ -1,3 +1,5 @@
+local FirstRunTick = os.clock()
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local ServerStorage = game:GetService("ServerStorage")
 
@@ -8,11 +10,5 @@ local Knit = require(Packages.Knit)
 Knit.AddServices(Services)
 
 Knit.Start():andThen(function()
-    print("Knit server started!")
-
-    local MoneyService = Knit.GetService("MoneyService")
-
-    while task.wait(0.5) do
-        MoneyService:GiveMoney(game.Players.Puzzled3d, math.random(3,5))
-    end
+    print(("Knit Server Loaded 🧶! Latency: %.1fms"):format((os.clock() - FirstRunTick) * 1000))
 end):catch(warn)
